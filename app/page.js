@@ -88,7 +88,7 @@ export default function Home() {
 
           <li>
             <a
-              href="/about"
+              href="#footer"
               className="flex items-center gap-2 text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium"
             >
               <Info className="w-4 h-4 text-orange-500" />
@@ -98,7 +98,7 @@ export default function Home() {
 
           <li>
             <a
-              href="/contact"
+              href="#footer"
               className="flex items-center gap-2 text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium"
             >
               <ContactIcon className="w-4 h-4 text-orange-500" />
@@ -108,7 +108,7 @@ export default function Home() {
 
           <li>
             <a
-              href="/trainers"
+              href="#trainers"
               className="flex items-center gap-2 text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium"
             >
               <Dumbbell className="w-4 h-4 text-orange-500" />
@@ -169,7 +169,7 @@ export default function Home() {
             Home
           </a>
           <a
-            href="/about"
+            href="#footer"
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 text-gray-200 hover:text-orange-500 transition-colors text-base font-semibold"
           >
@@ -177,7 +177,7 @@ export default function Home() {
             About
           </a>
           <a
-            href="/contact"
+            href="#footer"
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 text-gray-200 hover:text-orange-500 transition-colors text-base font-semibold"
           >
@@ -185,7 +185,7 @@ export default function Home() {
             Contact
           </a>
           <a
-            href="/trainers"
+            href="#trainers"
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 text-gray-200 hover:text-orange-500 transition-colors text-base font-semibold"
           >
@@ -1117,7 +1117,10 @@ export default function Home() {
         </section>
       </main>
       {/* Footer Section */}
-      <footer className=" bg-zinc-950 border-t border-zinc-900 pt-16 pb-10 px-6 text-gray-400 text-sm">
+      <footer
+        id="footer"
+        className=" bg-zinc-950 border-t border-zinc-900 pt-16 pb-10 px-6 text-gray-400 text-sm"
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1: Brand Info */}
           <div>
@@ -1190,13 +1193,13 @@ export default function Home() {
                 Home
               </Link>
               <Link
-                href="/about"
+                href="#footer"
                 className="hover:text-orange-500 transition-colors"
               >
                 About Us
               </Link>
               <Link
-                href="/#trainers"
+                href="#trainers"
                 className="hover:text-orange-500 transition-colors"
               >
                 Expert Trainers
